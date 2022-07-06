@@ -1,0 +1,22 @@
+{
+  "name": "refresh-ens-alchemy",
+  "version": "1.0.0",
+  "description": "refresh alchemy ens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellyshang/refresh-ens-alchemy.git"
+  },
+  "author": "kellyshang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kellyshang/refresh-ens-alchemy/issues"
+  },
+  "homepage": "https://github.com/kellyshang/refresh-ens-alchemy#readme",
+  "dependencies": {
+    "@alch/alchemy-sdk": "^1.0.6"
+  }
+}
