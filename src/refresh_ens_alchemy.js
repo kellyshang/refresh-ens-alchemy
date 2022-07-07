@@ -10,6 +10,7 @@ const getENS = async () => {
     let ENStokenIDs = []
     ENSTokenInfo.forEach(e => {
         ENStokenIDs.push(e.tokenId)
+        console.log(`tokenID and ens: ${e.tokenId}, ${e.rawMetadata.name}`)
     })
     return ENStokenIDs
 }
@@ -23,7 +24,9 @@ async function refresh() {
         const refreshresponse = await refreshNftMetadata(alchemy, contractAddress, tokenIds[i]);
         console.log(`refreshresponse: ${refreshresponse}`)
     }
+    console.log("after refreshed: ")
+    await getENS()
 }
 
-owner = process.argv[2];
+owner = process.argv[2].toLowerCase();
 refresh()
